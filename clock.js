@@ -8,7 +8,7 @@ function showClock(){
     const sec = String(date.getSeconds()).padStart(2, "0");
     clock.innerText = hour +":"+  min + ":" + sec;
 
-    if( hour >=11 || hour>=0 ){
+    if( hour >=22 || hour>=0 ){
         subtext.innerText = "It's time to go to bed!";
     }else if(hour<12){
         subtext.innerText = "Good Morning!"
