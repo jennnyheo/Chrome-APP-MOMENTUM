@@ -8,14 +8,14 @@ function showClock(){
     const sec = String(date.getSeconds()).padStart(2, "0");
     clock.innerText = hour +":"+  min + ":" + sec;
 
-    if( hour >=22 || hour>=0 ){
+    if( hour >=22 ){
         subtext.innerText = "It's time to go to bed!";
     }else if(hour<12){
-        subtext.innerText = "Good Morning!"
+        subtext.innerText = " Good Morning   !"
     }else if(hour>=12 || hour < 18){
         subtext.innerText = "Good Afternoon";
     }else{
-        subtext.innerText = "Good evening!"
+        subtext.innerText = " Good evening !"
     }
 }
 
